@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08ae95a6-f16c-46db-be3d-f4c2f6112eed" name="Changes" comment="Add Place model">
+    <list default="true" id="08ae95a6-f16c-46db-be3d-f4c2f6112eed" name="Changes" comment="Add model for images">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/places/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/places/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/places/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/places/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/where_to_go/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/where_to_go/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/where_to_go/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/where_to_go/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723038472848</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add model for images">
+      <option name="closed" value="true" />
+      <created>1723041432156</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723041432156</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -116,6 +121,7 @@
     <MESSAGE value="Add frontend" />
     <MESSAGE value="Create places app" />
     <MESSAGE value="Add Place model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Place model" />
+    <MESSAGE value="Add model for images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add model for images" />
   </component>
 </project>
