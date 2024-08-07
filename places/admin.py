@@ -4,7 +4,7 @@ from places.models import Place, Image
 
 @admin.register(Place)
 class PlaceAdmin(admin.ModelAdmin):
-    list_display = ('title',)
+    list_display = ('id', 'title',)
     search_fields = ('title',)
     list_filter = ('title',)
 
