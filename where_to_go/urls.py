@@ -21,5 +21,5 @@ from where_to_go import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.show_phones),
+    path('', views.show_start_page),
 ]

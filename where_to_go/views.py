@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 
-def show_phones(request):
-    return render(request, 'start_page.html')
+def show_start_page(request):
+    return render(request, 'index.html')
