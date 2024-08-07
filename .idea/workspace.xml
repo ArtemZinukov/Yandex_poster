@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08ae95a6-f16c-46db-be3d-f4c2f6112eed" name="Changes" comment="Setup media files serving">
+    <list default="true" id="08ae95a6-f16c-46db-be3d-f4c2f6112eed" name="Changes" comment="Move data from template to view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/where_to_go/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/where_to_go/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/where_to_go/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/where_to_go/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723042235064</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Move data from template to view">
+      <option name="closed" value="true" />
+      <created>1723049102376</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723049102376</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -132,6 +139,7 @@
     <MESSAGE value="Add Place model" />
     <MESSAGE value="Add model for images" />
     <MESSAGE value="Setup media files serving" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup media files serving" />
+    <MESSAGE value="Move data from template to view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move data from template to view" />
   </component>
 </project>

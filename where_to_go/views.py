@@ -1,37 +1,30 @@
 from django.shortcuts import render
+from places.models import Place
 
 
 def show_start_page(request):
-    context = {
-      'places_geo': {"type": "FeatureCollection",
-                     "features": [
-                      {
-                        "type": "Feature",
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [37.62, 55.793676]
-                        },
-                        "properties": {
-                          "title": "«Легенды Москвы",
-                          "placeId": "moscow_legends",
-                          "detailsUrl": "static/places/moscow_legends.json"
-                        }
-                      },
-                      {
-                        "type": "Feature",
-                        "geometry":
-                          {
-                            "type": "Point",
-                            "coordinates": [37.64, 55.753676]
-                          },
-                        "properties":
-                          {
-                            "title": "Крыши24.рф",
-                            "placeId": "roofs24",
-                            "detailsUrl": "static/places/roofs24.json"
-                          }
-                      }
-                    ]
-                    }
+    places = Place.objects.all()
+    features = []
+    for place in places:
+        feature = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [place.lon, place.lat],
+            },
+            "properties": {
+                "title": place.title,
+                "placeId": place.id,
+                "detailsUrl": f"static/places/{place.id}.json"
             }
+        }
+        features.append(feature)
+
+    context = {
+        'places_geo': {
+            "type": "FeatureCollection",
+            "features": features
+        }
+    }
+
     return render(request, 'index.html', context=context)
