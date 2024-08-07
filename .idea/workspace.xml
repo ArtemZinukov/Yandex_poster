@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08ae95a6-f16c-46db-be3d-f4c2f6112eed" name="Changes" comment="Выводит информацию в виде json объекта">
+    <list default="true" id="08ae95a6-f16c-46db-be3d-f4c2f6112eed" name="Changes" comment="Изменил загрузку данных по каждой локации">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/where_to_go/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/where_to_go/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/places/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/places/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723054154125</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Изменил загрузку данных по каждой локации">
+      <option name="closed" value="true" />
+      <created>1723054776106</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723054776106</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -157,6 +165,7 @@
     <MESSAGE value="Move data from template to view" />
     <MESSAGE value="Добавил загрузку данных из бд" />
     <MESSAGE value="Выводит информацию в виде json объекта" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выводит информацию в виде json объекта" />
+    <MESSAGE value="Изменил загрузку данных по каждой локации" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменил загрузку данных по каждой локации" />
   </component>
 </project>
