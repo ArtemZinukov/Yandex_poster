@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08ae95a6-f16c-46db-be3d-f4c2f6112eed" name="Changes" comment="Добавил загрузку данных из бд">
-      <change afterPath="$PROJECT_DIR$/templates/place_detail.html" afterDir="false" />
+    <list default="true" id="08ae95a6-f16c-46db-be3d-f4c2f6112eed" name="Changes" comment="Выводит информацию в виде json объекта">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/places/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/places/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/where_to_go/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/where_to_go/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/where_to_go/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/where_to_go/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723050193539</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Выводит информацию в виде json объекта">
+      <option name="closed" value="true" />
+      <created>1723054154125</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723054154125</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -152,6 +156,7 @@
     <MESSAGE value="Setup media files serving" />
     <MESSAGE value="Move data from template to view" />
     <MESSAGE value="Добавил загрузку данных из бд" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил загрузку данных из бд" />
+    <MESSAGE value="Выводит информацию в виде json объекта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выводит информацию в виде json объекта" />
   </component>
 </project>

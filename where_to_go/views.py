@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
+from django.urls import reverse
 from places.models import Place, Image
 
 
@@ -16,7 +17,7 @@ def show_start_page(request):
             "properties": {
                 "title": place.title,
                 "placeId": place.id,
-                "detailsUrl": f"static/places/{place.id}.json"
+                "detailsUrl": reverse('show_place_detail', args=[place.id])
             }
         }
         features.append(feature)
