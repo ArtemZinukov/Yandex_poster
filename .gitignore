@@ -127,3 +127,4 @@ where_to_go/media/*
 media/*
 .vscode/
 .idea
+db.sqlite3
