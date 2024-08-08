@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08ae95a6-f16c-46db-be3d-f4c2f6112eed" name="Changes" comment="Добавил редактор WYSIWYG для редактирования полного описания места">
+    <list default="true" id="08ae95a6-f16c-46db-be3d-f4c2f6112eed" name="Changes" comment="Добавил переменные окружения">
+      <change beforePath="$PROJECT_DIR$/.idea/Write_Yandex_poster.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Write_Yandex_poster.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/where_to_go/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/where_to_go/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723139610691</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Добавил переменные окружения">
+      <option name="closed" value="true" />
+      <created>1723140963963</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1723140963963</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -204,6 +212,7 @@
     <MESSAGE value="Добавил превью картинки в панели администратора" />
     <MESSAGE value="Добавил возможность перетаскивать фотографии в админке" />
     <MESSAGE value="Добавил редактор WYSIWYG для редактирования полного описания места" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил редактор WYSIWYG для редактирования полного описания места" />
+    <MESSAGE value="Добавил переменные окружения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил переменные окружения" />
   </component>
 </project>
