@@ -1,9 +1,10 @@
 from django.contrib import admin
 from places.models import Place, Image
 from django.utils.html import mark_safe
+from adminsortable2.admin import SortableAdminMixin, SortableStackedInline, SortableAdminBase
 
 
-class ImageInline(admin.TabularInline):
+class ImageInline(SortableStackedInline, admin.TabularInline):
     model = Image
     extra = 1
 
@@ -19,7 +20,7 @@ class ImageInline(admin.TabularInline):
 
 
 @admin.register(Place)
-class PlaceAdmin(admin.ModelAdmin):
+class PlaceAdmin(SortableAdminBase, admin.ModelAdmin):
     list_display = ('id', 'title',)
     search_fields = ('title',)
     list_filter = ('title',)
@@ -27,8 +28,7 @@ class PlaceAdmin(admin.ModelAdmin):
 
 
 @admin.register(Image)
-class ImageAdmin(admin.ModelAdmin):
+class ImageAdmin(SortableAdminMixin, admin.ModelAdmin):
     list_display = ('image_tag', 'image_id', 'place')
     search_fields = ('image_id', 'place')
     list_filter = ('image_id', 'place')
-
