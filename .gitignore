@@ -126,3 +126,4 @@ dmypy.json
 where_to_go/media/*
 media/*
 .vscode/
+.idea
