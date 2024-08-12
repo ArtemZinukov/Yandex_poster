@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils.html import mark_safe
+from django.utils.html import format_html
 from tinymce.models import HTMLField
 
 
@@ -25,7 +25,7 @@ class Image(models.Model):
 
     def image_tag(self):
         if self.image:
-            return mark_safe(f'<img src="{self.image.url}" style="width: 200px; height: 200px;" />')
+            return format_html('<img src="{}" style="width: 200px; height: 200px;" />', self.image.url)
         return "No Image"
 
     image_tag.short_description = 'Image Preview'
