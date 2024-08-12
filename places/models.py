@@ -20,7 +20,7 @@ class Place(models.Model):
 
 class Image(models.Model):
     place = models.ForeignKey(Place, on_delete=models.CASCADE, verbose_name='Название локации', related_name='images')
-    image = models.ImageField(upload_to='images/', null=True, blank=True, verbose_name="картинка")
+    image = models.ImageField(upload_to='images/', verbose_name="картинка")
     image_id = models.PositiveIntegerField(db_index=True, default=0, verbose_name='номер картинки')
 
     def image_tag(self):
