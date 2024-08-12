@@ -59,8 +59,10 @@ class Command(BaseCommand):
 
                 file_name = img_url.split("/")[-1]
 
-                image = Image(place=place)
-                image.image.save(file_name, ContentFile(img_response.content), save=True)
+                Image.objects.create(
+                    place=place,
+                    image=ContentFile(img_response.content, name=file_name)
+                )
                 self.stdout.write(self.style.SUCCESS(f'Изображение загружено и сохранено: {file_name}'))
             except requests.exceptions.HTTPError as http_err:
                 self.stdout.write(self.style.ERROR(f'Не удалось загрузить изображение с URL: {img_url} - {http_err}'))
