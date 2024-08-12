@@ -2,6 +2,7 @@ import json
 import requests
 from django.core.management.base import BaseCommand
 from django.core.files.base import ContentFile
+from django.core.exceptions import MultipleObjectsReturned
 from places.models import Place, Image
 
 
@@ -25,30 +26,33 @@ class Command(BaseCommand):
             return
 
         try:
-            data = response.json()
+            payload = response.json()
         except json.JSONDecodeError:
             self.stdout.write(self.style.ERROR('Не удалось обработать json'))
             return
 
-        lat = float(data['coordinates']['lat'])
-        lon = float(data['coordinates']['lng'])
-
-        place, created = Place.objects.get_or_create(
-            title=data['title'],
-            defaults={
-                'description_short': data['description_short'],
-                'description_long': data['description_long'],
-                'lat': lat,
-                'lon': lon
-            }
-        )
+        lat = payload['coordinates']['lat']
+        lon = payload['coordinates']['lng']
+        try:
+            place, created = Place.objects.get_or_create(
+                title=payload['title'],
+                defaults={
+                    'description_short': payload['description_short'],
+                    'description_long': payload['description_long'],
+                    'lat': lat,
+                    'lon': lon
+                }
+            )
+        except MultipleObjectsReturned:
+            self.stdout.write(self.style.ERROR(f'Ошибка: найдено несколько мест с названием "{payload["title"]}".'))
+            return
 
         if created:
             self.stdout.write(self.style.SUCCESS(f'Создано новое место: {place.title}'))
         else:
             self.stdout.write(self.style.WARNING(f'Место уже существует: {place.title}'))
 
-        for img_url in data['imgs']:
+        for img_url in payload['imgs']:
             try:
                 img_response = requests.get(img_url)
                 img_response.raise_for_status()
